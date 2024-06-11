@@ -253,7 +253,7 @@ function playQuiz(){
   }
 // try again button
   let tryButton = document.getElementById('try-button')
-  tryButton.addEventListener('click', () => window.location.href = './');
+  tryButton.addEventListener('click', () => window.location.href = 'https://cchinchillaz.github.io/FoodSpirit-Quiz/');
 
 // share button
   // Check if the Web Share API is supported
