@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem; /* Increased font size */
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 0;
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 0;
+}
+
+p {
+    
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 37px;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: none;
+    transition: transform 150ms;
+}
+
+.quiz {
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#story-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress {
+    position: fixed;
+    top: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; 
+    background-color: gray;
+    z-index: 1000; 
+}
+
+#bar {
+    width: 0%;
+    height: 10px;
+    background-color: greenyellow;
+}
+
+#story-image {
+    display: block;
+    margin: 80px auto 0 auto; /* Add margin to avoid overlap with progress bar */
+    width: 80%; /* Adjust width as needed */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    z-index: 1; /* Ensure it is below the progress bar */
+}
+
+#dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.result-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#result-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#result-image img {
+    height: auto;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#message {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Add these styles to your style.css */
+
+.dialog-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+.dialog-20 {
+    background-image: url('images/bg.png'); /* Replace with your image URL */
+}
+
+.home-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/bg.png');
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+        height: 70px;
+    }
+
+    #message {
+        font-size: 2.4rem;
+    }
+}
