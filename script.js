@@ -142,7 +142,7 @@ function playQuiz(){
     if (storyIndex < 20) {
       image.src = 'images/' + getStoryURL(storyIndex); 
     } else {
-      image.src = '';
+      image.remove();
       background.className = 'dialog-background dialog-20'; 
       
     }
