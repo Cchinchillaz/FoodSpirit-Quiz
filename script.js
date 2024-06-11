@@ -59,7 +59,7 @@ function playQuiz(){
       value: ['p','j'],
     },
 
-    { dialog: "“เห้ย! จะหนีไปไหนน่ะ” เสียงผู้คุมตะโกน พวกคุณทำไม่สำเร็จ และติดต้องคุกตามเดิม",
+    { dialog: "“เห้ย! จะหนีไปไหนน่ะ” เสียงผู้คุมตะโกน พวกคุณทำไม่สำเร็จ และต้องติดคุกตามเดิม",
       choices: ["เห้อ เหนื่อยชะมัดเลย ขอนอนสักพักละกัน", "เบื่อจริงๆ อยากออกไปจากที่นี่แล้ววว"],
       value: ['i','e'],
     },
@@ -74,12 +74,12 @@ function playQuiz(){
       value: ['a'],
     },
 
-    { dialog: "ขอบคุณเธอมากนะ ที่ช่วยฉัน ถ้าเดินตามทางนี้ไปก็จะเข้าไปในเมืองได้แล้วล่ะ",
+    { dialog: "ขอบคุณเธอมากนะ ที่ช่วยฉัน ถ้าเดินตามทางนี้ก็จะเข้าไปในเมืองได้แล้วล่ะ",
       choices: ["แค่นี้ก็จะไม่ไหวแล้ว ยังต้องเดินอีกไกลแค่ไหนกันนะ", "รู้สึกเหมือนเขาจะดูเน่าน้อยลงรึเปล่านะ?"],
       value: ['s','n'],
     },
 
-    { dialog: "ต๊อกๆ เสียงหนึ่งดังขึ้นจากข้างหน้า คุณเดินไปและพบกับ คุณตาช็อกโกแลตที่ดูเหน็ดเหนื่อย “รถของฉันมันดันพลังงานหมดนะสิ อากาศก็ร้อนชะมัด ฉันจะละลายหมดแล้ว”",
+    { dialog: "ต๊อกๆ เสียงหนึ่งดังขึ้นจากข้างหน้า คุณเดินไปและพบกับ คุณตาช็อกโกแลตที่ดูเหน็ดเหนื่อย “รถของฉันมันดันพลังงานหมดน่ะสิ อากาศก็ร้อนชะมัด ฉันจะละลายหมดแล้ว”",
       choices: ["น่าสงสารจังเลย ต้องรีบช่วยคุณตา!" , "แถวๆนี้น่าจะพออะไรมาเติมพลังงานได้นะ"],
       value: ['f','t'],
     },
@@ -253,7 +253,7 @@ function playQuiz(){
   }
 // try again button
   let tryButton = document.getElementById('try-button')
-  tryButton.addEventListener('click', () => window.location.href = './index.html');
+  tryButton.addEventListener('click', () => window.location.href = './');
 
 // share button
   // Check if the Web Share API is supported
@@ -262,7 +262,7 @@ function playQuiz(){
       try {
         await navigator.share({
           title: 'Check out this quiz!',
-          text: 'What is your spirit food?',
+          text: 'What is your food spirit?',
           url: window.location.href
         });
         console.log('Content shared successfully');
