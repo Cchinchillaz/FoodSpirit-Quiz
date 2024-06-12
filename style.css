@@ -97,10 +97,6 @@ button:hover {
     justify-content: center;
 }
 
-.story-elem{
-    transform: scale(0.9);
-}
-
 #progress {
     position: fixed;
     top: 30px; 
