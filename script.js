@@ -143,6 +143,8 @@ function playQuiz(){
       image.src = 'images/' + getStoryURL(storyIndex); 
     } else {
       image.style.display = 'none';
+      back = document.getElementById('back-button');
+      back.style.display = 'none';
       background.className = 'dialog-background dialog-20'; 
       
     }
@@ -274,7 +276,17 @@ function playQuiz(){
   // Hide the share button if Web Share API is not supported
     document.getElementById('share-button').style.display = 'none';
   }
+
+  // back button
+  function showPreviousStory(){
+  if(storyIndex > 0){
+    storyIndex--;
+    showCurrentStory();
+  }
+  else{window.location.href = 'https://cchinchillaz.github.io/FoodSpirit-Quiz/';}
   
+  }
+  document.getElementById('back-button').addEventListener('click', () => showPreviousStory());
 }
 
 playQuiz();

@@ -137,6 +137,23 @@ button:hover {
     padding: 20px;
 }
 
+#back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px, auto;
+    
+}
+#back-button button{
+    background-color: grey;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    border-width: 0px;
+    color: white;
+}
+
 
 .result-button {
     display: flex;
